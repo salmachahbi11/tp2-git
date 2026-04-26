@@ -1,6 +1,8 @@
 // addition(a, b) -> retourne la somme de a et b
 function addition(a, b) {
-  return a + b; // simple addition
+  const x = Number(a), y = Number(b);
+  if (Number.isNaN(x) || Number.isNaN(y)) return 0;
+  return x + y; // simple addition
 }
 
 function soustraction(a, b) {
